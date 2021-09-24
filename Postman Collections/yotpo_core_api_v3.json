@@ -67,7 +67,7 @@
               "});",
               "var jsonData = JSON.parse(responseBody);",
               "console.log(jsonData.pagination.next_page_info);",
-              "pm.environment.set(\"page_info\", jsonData.pagination.next_page_info);",
+              "pm.environment.set(\"next_page_info\", jsonData.pagination.next_page_info);",
               "// Log external ID of first record in the response",
               "console.log(JSON.stringify(jsonData.products[0].external_id))"
             ],
@@ -164,7 +164,7 @@
   ],
   "variable": [
     {
-      "id": "59a754f4-8948-41eb-ab43-029a6895f8da",
+      "id": "468c8527-df68-4571-a778-d2874abe8c7a",
       "key": "BASE_URL",
       "value": "https://api.yotpo.com/core/v3/stores/{{app_key}}/"
     }
