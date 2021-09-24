@@ -13,7 +13,7 @@
           "script": {
             "id": "b835c01d-5d3c-4715-b90a-7ee941527ae5",
             "exec": [
-              "pm.test(\"environment to be production\", function () {",
+              "pm.test(\"environment to be yotpo_core_api_v3\", function () {",
               "    pm.expect(pm.environment.get(\"env\")).to.equal(\"yotpo_core_api_v3\");",
               "});",
               "pm.test(\"response must be valid and have a body\", function () {",
@@ -164,7 +164,7 @@
   ],
   "variable": [
     {
-      "id": "e549701a-38df-4358-b13a-0e74baf42541",
+      "id": "a9e7b0d0-b4b1-49aa-b61f-f2319178aa7d",
       "key": "BASE_URL",
       "value": "https://api.yotpo.com/core/v3/stores/{{app_key}}/"
     }
