@@ -117,13 +117,13 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{BASE_URL}}products?next_page_info={{next_page_info}}",
+          "raw": "{{BASE_URL}}products?page_info={{next_page_info}}",
           "host": [
             "{{BASE_URL}}products"
           ],
           "query": [
             {
-              "key": "next_page_info",
+              "key": "page_info",
               "value": "{{next_page_info}}"
             }
           ]
@@ -164,7 +164,7 @@
   ],
   "variable": [
     {
-      "id": "468c8527-df68-4571-a778-d2874abe8c7a",
+      "id": "e549701a-38df-4358-b13a-0e74baf42541",
       "key": "BASE_URL",
       "value": "https://api.yotpo.com/core/v3/stores/{{app_key}}/"
     }
