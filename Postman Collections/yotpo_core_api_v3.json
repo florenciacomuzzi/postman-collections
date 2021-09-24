@@ -29,7 +29,7 @@
           }
         }
       ],
-      "_postman_id": "251061b5-a4cc-4cda-9f62-3a407f6f1db5",
+      "id": "251061b5-a4cc-4cda-9f62-3a407f6f1db5",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -67,7 +67,7 @@
               "});",
               "var jsonData = JSON.parse(responseBody);",
               "console.log(jsonData.pagination.next_page_info);",
-              "pm.environment.set(\"next_page_info\", jsonData.pagination.next_page_info);",
+              "pm.environment.set(\"page_info\", jsonData.pagination.next_page_info);",
               "// Log external ID of first record in the response",
               "console.log(JSON.stringify(jsonData.products[0].external_id))"
             ],
@@ -75,7 +75,7 @@
           }
         }
       ],
-      "_postman_id": "b09054cf-4c94-43a8-88bb-57a7a823a922",
+      "id": "b09054cf-4c94-43a8-88bb-57a7a823a922",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -109,7 +109,7 @@
           }
         }
       ],
-      "_postman_id": "c006c4a1-528a-47e4-84af-cd0263866bfc",
+      "id": "c006c4a1-528a-47e4-84af-cd0263866bfc",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -164,10 +164,9 @@
   ],
   "variable": [
     {
-      "id": "43d16f2a-0f7d-469b-9824-bf78d2dd47c6",
+      "id": "59a754f4-8948-41eb-ab43-029a6895f8da",
       "key": "BASE_URL",
-      "value": "https://api.yotpo.com/core/v3/stores/{{app_key}}/",
-      "type": "string"
+      "value": "https://api.yotpo.com/core/v3/stores/{{app_key}}/"
     }
   ]
 }
